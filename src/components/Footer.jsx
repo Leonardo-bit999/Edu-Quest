@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-brand mb-4">
               <h4 className="fw-bold">
                 <i className="bi bi-shield-fill-check me-2 text-warning"></i>
-                Mundo Real RPG
+                EduQuest
               </h4>
               <p className="text-light opacity-75">
                 Transformando a educação brasileira através da gamificação,
