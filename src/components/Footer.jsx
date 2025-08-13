@@ -101,7 +101,7 @@ const Footer = () => {
               <div className="contact-item mb-3">
                 <i className="bi bi-geo-alt-fill text-warning me-2"></i>
                 <span className="text-light opacity-75">
-                  São Paulo, SP - Brasil<br />
+                  Salvador, BA - Brasil<br />
                   Rua da Educação, 123 - Centro
                 </span>
               </div>
@@ -116,14 +116,14 @@ const Footer = () => {
               <div className="contact-item mb-3">
                 <i className="bi bi-telephone-fill text-warning me-2"></i>
                 <a href="tel:+5511999999999" className="text-light opacity-75 text-decoration-none hover-link">
-                  (11) 99999-9999
+                  (71) 99999-9999
                 </a>
               </div>
               
               <div className="contact-item">
                 <i className="bi bi-whatsapp text-warning me-2"></i>
                 <a href="https://wa.me/5511999999999" className="text-light opacity-75 text-decoration-none hover-link">
-                  WhatsApp: (11) 99999-9999
+                  WhatsApp: (71) 99999-9999
                 </a>
               </div>
             </div>
