@@ -34,14 +34,6 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          
-          <div className="col-lg-5 col-md-4 text-center">
-            <div className="hero-character">
-              <div className="character-circle">
-                <i className="bi bi-person-arms-up character-icon"></i>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

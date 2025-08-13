@@ -4,28 +4,28 @@ const EpicMissionsSection = () => {
   const missions = [
     {
       title: 'Salve o Reino da Matemática',
-      description: 'Derrote o Dragão das Equações e salve a princesa Álgebra usando suas habilidades matemáticas',
-      points: '500',
+      description: 'Medir a área da sua casa e descobrir o segredo dos números perdidos',
+      points: '350',
       difficulty: 'Médio',
       time: '45 min',
       color: 'primary',
       icon: 'bi-calculator-fill'
     },
     {
-      title: 'Aventura na Terra da Gramática',
-      description: 'Explore dungeons repletas de verbos, substantivos e adjetivos para dominar a língua portuguesa',
-      points: '350',
+      title: 'Alquimia da Terra',
+      description: 'Plantar uma semente e documentar seu crescimento por uma semana',
+      points: '500',
       difficulty: 'Fácil',
-      time: '30 min',
+      time: '7 dias',
       color: 'success',
       icon: 'bi-book-fill'
     },
     {
-      title: 'Expedição Científica Espacial',
-      description: 'Viaje pelo sistema solar e descubra os segredos da física e química em uma missão intergaláctica',
-      points: '750',
+      title: 'Fuga do Labirinto Pixelado',
+      description: 'Passar 24h longe de jogos digitais e descobrir atividades offline',
+      points: '1000',
       difficulty: 'Difícil',
-      time: '60 min',
+      time: '24h',
       color: 'warning',
       icon: 'bi-rocket-takeoff-fill'
     }

@@ -4,31 +4,27 @@ const StatisticsSection = () => {
   const stats = [
     {
       percentage: '74%',
-      title: 'Dos alunos melhoram',
-      subtitle: 'suas notas em até 3 meses',
+      title: ' dos estudantes dizem estar desmotivados com o ensino tradicional',
       bgColor: 'bg-danger',
       icon: 'bi-graph-up-arrow'
     },
     {
       percentage: '6h+',
-      title: 'De estudo por dia',
-      subtitle: 'sem perceber o tempo passar',
+      title: 'por dia nas telas, maz zero engajamento com estudos',
       bgColor: 'bg-warning',
       icon: 'bi-clock-fill'
     },
     {
       percentage: '1 em 4',
-      title: 'Professores já usam',
-      subtitle: 'gamificação em suas aulas',
+      title: 'jovens abandona o Enino Médio no Brasil',
       bgColor: 'bg-success',
       icon: 'bi-people-fill'
     },
     {
       percentage: '60%',
-      title: 'Mais engajamento',
-      subtitle: 'comparado ao método tradicional',
+      title: 'dos professores relatam dificuldade para engajar alunos',
       bgColor: 'bg-info',
-      icon: 'bi-heart-fill'
+      icon: 'bi-clipboard-data-fill'
     }
   ];
 
@@ -41,7 +37,7 @@ const StatisticsSection = () => {
             <i className="bi bi-exclamation-triangle-fill text-danger ms-2"></i>
           </h2>
           <p className="lead text-muted">
-            Os números mostram que é hora de uma mudança na educação
+            Os dados mostram que é hora de uma mudança na educação
           </p>
         </div>
         

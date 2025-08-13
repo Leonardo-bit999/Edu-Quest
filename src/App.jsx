@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import './landing.css';
 
-// Importando todos os componentes
+// Importando todos os componentes Quando clicar no botão aparecer um opção de cadastro uma tela do jogador
+
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import StatisticsSection from './components/StatisticsSection';

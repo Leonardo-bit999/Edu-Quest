@@ -31,13 +31,6 @@ const HeroesSection = () => {
       stats: ['Acompanhamento', 'Participação ativa', 'Progresso familiar']
     },
     {
-      title: 'Diretores de Educação',
-      description: 'Implemente inovação educacional em larga escala com resultados mensuráveis e comprovados.',
-      icon: 'bi-building-fill',
-      color: 'warning',
-      stats: ['Gestão institucional', 'Resultados escaláveis', 'ROI educacional']
-    },
-    {
       title: 'Alunos de Todas as Idades',
       description: 'Seja o herói da sua própria jornada educacional e descubra o prazer de aprender brincando.',
       icon: 'bi-person-arms-up',
@@ -100,11 +93,11 @@ const HeroesSection = () => {
               Junte-se à Revolução Educacional!
             </h5>
             <p className="mb-3">
-              Mais de <strong>500 escolas</strong> já fazem parte da nossa comunidade de heróis da educação.
+              Entre no universo do <strong>RPG Realms Of The Unplugged</strong> e <strong>desbloqueie seu potencial</strong>. É hora de conquistar <strong>novos níveis de conhecimento</strong>!
             </p>
             <button className="btn btn-success btn-lg rounded-pill px-5">
               <i className="bi bi-rocket-takeoff-fill me-2"></i>
-              Quero Ser um Herói
+              Iniciar a minha aventura
             </button>
           </div>
         </div>

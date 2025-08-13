@@ -12,6 +12,7 @@ const FAQSection = () => {
       question: 'A plataforma substitui o professor tradicional?',
       answer: 'Não! Nossa plataforma é uma ferramenta que potencializa o trabalho do professor. Ela oferece recursos para tornar as aulas mais dinâmicas e envolventes, mas o educador continua sendo fundamental no processo de ensino-aprendizagem.'
     },
+    
     {
       id: 'faq3',
       question: 'Funciona em smartphones e tablets também?',
@@ -29,16 +30,11 @@ const FAQSection = () => {
     },
     {
       id: 'faq6',
-      question: 'Quanto custa para implementar na escola?',
-      answer: 'Oferecemos planos flexíveis para diferentes tamanhos de instituições. Entre em contato conosco para uma proposta personalizada que se adeque ao orçamento da sua escola.'
+      question: 'Preciso de treinamento para usar a plataforma?',
+      answer: 'Oferecemos materiais de apoio e treinamentos online para professores e gestores, além de um design intuitivo pensado para facilitar o uso.'
     },
     {
       id: 'faq7',
-      question: 'Há treinamento para os professores?',
-      answer: 'Sim! Oferecemos treinamento completo para toda a equipe pedagógica, incluindo workshops presenciais, materiais didáticos e suporte técnico contínuo para garantir o sucesso da implementação.'
-    },
-    {
-      id: 'faq8',
       question: 'Como garantem a segurança dos dados dos alunos?',
       answer: 'A segurança é nossa prioridade. Seguimos rigorosamente a LGPD (Lei Geral de Proteção de Dados) e utilizamos criptografia de ponta para proteger todas as informações dos usuários.'
     }
@@ -60,7 +56,7 @@ const FAQSection = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="accordion" id="faqAccordion">
-              {faqs.map((faq, index) => (
+              {faqs.map((faq) => (
                 <div key={faq.id} className="accordion-item border-0 shadow-sm mb-3">
                   <h3 className="accordion-header">
                     <button 
@@ -90,17 +86,17 @@ const FAQSection = () => {
             </div>
             
             <div className="text-center mt-5">
-              <div className="alert alert-light border shadow-sm">
+              <div className="alert alert-light border shadow-sm bg-primary bg-opacity-10">
                 <h5 className="alert-heading">
                   <i className="bi bi-headset me-2"></i>
                   Ainda tem dúvidas?
                 </h5>
                 <p className="mb-3">
-                  Nossa equipe de especialistas está pronta para ajudar você!
+                  Nossa equipe está pronta para ajudar você!
                 </p>
                 <button className="btn btn-primary btn-lg rounded-pill px-4">
                   <i className="bi bi-chat-dots-fill me-2"></i>
-                  Falar com Especialista
+                  Tirar Dúvidas
                 </button>
               </div>
             </div>

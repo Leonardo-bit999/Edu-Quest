@@ -4,7 +4,7 @@ const HowItWorksSection = () => {
   const steps = [
     {
       step: '01',
-      title: 'Criação do Avatar',
+      title: 'Criação do Herói',
       description: 'Cada aluno cria seu personagem único com habilidades e características especiais',
       icon: 'bi-person-plus-fill',
       color: 'text-primary'
@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
     {
       step: '03',
       title: 'Sistema de Recompensas',
-      description: 'Ganhe pontos, badges e desbloqueie conquistas conforme avança no aprendizado',
+      description: 'Ganhe pontos e desbloqueie conquistas conforme avança no aprendizado',
       icon: 'bi-trophy-fill',
       color: 'text-warning'
     },

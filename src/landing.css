@@ -198,6 +198,25 @@ body {
   box-shadow: var(--box-shadow-lg);
 }
 
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  color: #fff;
+}
+.btn-success {
+  background: var(--success-gradient);
+  border: none;
+  color: #fff;
+}
+.btn-success:hover {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+}
+
 .btn-warning {
   background: linear-gradient(135deg, #ffeaa7, #fab1a0);
   border: none;
@@ -219,6 +238,8 @@ body {
 
 .card-header {
   border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+  background: linear-gradient(135deg, #EEAECA,
+    #94BBE9);
 }
 
 .card-footer {

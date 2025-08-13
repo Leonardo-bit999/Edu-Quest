@@ -61,23 +61,6 @@ const WhyUniqueSection = () => {
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-5">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="alert alert-info border-0 shadow-sm">
-                <h5 className="alert-heading">
-                  <i className="bi bi-lightbulb-fill me-2"></i>
-                  Resultado Comprovado
-                </h5>
-                <p className="mb-0">
-                  Mais de <strong>10.000 alunos</strong> já experimentaram nossa metodologia 
-                  e <strong>89%</strong> dos professores relatam melhoria significativa no engajamento!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
