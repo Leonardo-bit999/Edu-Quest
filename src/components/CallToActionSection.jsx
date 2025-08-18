@@ -7,15 +7,15 @@ const CallToActionSection = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8 text-center">
             <div className="cta-content text-white">
-              <div className="mb-4">
+              <div className="mb-4 animate-fade-in-up animate-delay-1 hidden-on-load">
                 <i className="bi bi-rocket-takeoff-fill display-2 text-warning"></i>
               </div>
 
-              <h2 className="display-4 fw-bold mb-4">
+              <h2 className="display-4 fw-bold mb-4 animate-fade-in-up animate-delay-2 hidden-on-load">
                 Junte-se à Revolução da Aprendizagem!
               </h2>
 
-              <p className="lead mb-4 opacity-90">
+              <p className="lead mb-4 opacity-90 animate-fade-in-up animate-delay-3 hidden-on-load">
                 Não deixe seus alunos ficarem para trás! Transforme sua sala de
                 aula em um mundo de aventuras épicas, onde cada lição é uma
                 conquista e cada aluno é o herói de sua própria jornada
@@ -42,7 +42,10 @@ const CallToActionSection = () => {
                       desc: "Sem custos para professores, alunos ou escolas.",
                     },
                   ].map((item, idx) => (
-                    <div className="col-md-4 mb-3" key={idx}>
+                    <div
+                      className="col-md-4 mb-3 animate-scale-in hidden-on-load animate-delay-4"
+                      key={idx}
+                    >
                       <div className="stat-item h-100 d-flex flex-column align-items-center justify-content-start p-3">
                         <div className="display-5 mb-3">{item.icon}</div>
                         <h3
@@ -62,18 +65,18 @@ const CallToActionSection = () => {
 
               {/* Botões */}
               <div className="cta-buttons">
-                <button className="btn btn-warning btn-lg me-3 mb-3 px-5 py-3 rounded-pill shadow-lg">
+                <button className="btn btn-warning btn-lg me-3 mb-3 px-5 py-3 rounded-pill shadow-lg animate-fade-in-up animate-delay-7 animate-pulse hidden-on-load">
                   <i className="bi bi-play-circle-fill me-2"></i>
                   <span className="fw-bold">Iniciar Aventura</span>
                 </button>
-                <button className="btn btn-outline-light btn-lg mb-3 px-5 py-3 rounded-pill">
+                <button className="btn btn-outline-light btn-lg mb-3 px-5 py-3 rounded-pill animate-fade-in-up animate-delay-8 hidden-on-load">
                   <i className="bi bi-search-heart-fill me-2"></i>
                   Explorar Recursos
                 </button>
               </div>
 
               {/* Mensagem de gratuidade no lugar de garantia/oferta */}
-              <div className="cta-guarantee mt-4">
+              <div className="cta-guarantee mt-4 animate-fade-in-up animate-delay-9 hidden-on-load">
                 <div className="alert alert-warning bg-warning bg-opacity-20 border-warning text-white">
                   <i className="bi bi-gift-fill me-2"></i>
                   <strong>Disponível para todos</strong>! O RPG Realms Of The

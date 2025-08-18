@@ -34,30 +34,39 @@ const EpicMissionsSection = () => {
   return (
     <section id="missoes" className="py-5 bg-light">
       <div className="container">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 animate-fade-in-up hidden-on-load">
           <h2 className="fw-bold mb-3">
-            Missões Épicas que Seus Alunos Vão Amar! 
+            Missões Épicas que Seus Alunos Vão Amar!
             <i className="bi bi-lightning-charge-fill text-warning ms-2"></i>
           </h2>
           <p className="lead text-muted">
             Transforme qualquer conteúdo em uma aventura inesquecível
           </p>
         </div>
-        
+
         <div className="row g-4">
           {missions.map((mission, index) => (
-            <div key={index} className="col-lg-4 col-md-6">
+            <div
+              key={index}
+              className={`col-lg-4 col-md-6 animate-scale-in hidden-on-load animate-delay-${
+                index + 1
+              }`}
+            >
               <div className="card h-100 border-0 shadow-lg hover-lift">
                 <div className="card-header bg-white border-0 text-center pt-4">
                   <div className={`mission-icon mb-3`}>
-                    <i className={`${mission.icon} display-4 text-${mission.color}`}></i>
+                    <i
+                      className={`${mission.icon} display-4 text-${mission.color}`}
+                    ></i>
                   </div>
                   <h5 className="card-title fw-bold">{mission.title}</h5>
                 </div>
-                
+
                 <div className="card-body">
-                  <p className="card-text text-muted mb-4">{mission.description}</p>
-                  
+                  <p className="card-text text-muted mb-4">
+                    {mission.description}
+                  </p>
+
                   <div className="mission-stats mb-4">
                     <div className="row text-center">
                       <div className="col-4">
@@ -84,9 +93,11 @@ const EpicMissionsSection = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="card-footer bg-white border-0 pb-4">
-                  <button className={`btn btn-${mission.color} w-100 btn-lg rounded-pill`}>
+                  <button
+                    className={`btn btn-${mission.color} w-100 btn-lg rounded-pill`}
+                  >
                     <i className="bi bi-play-circle-fill me-2"></i>
                     Iniciar Missão
                   </button>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white py-5">
       <div className="container">
-        <div className="row g-4">
+        <div className="row g-4 animate-fade-in-up hidden-on-load animate-delay-1">
           {/* Logo e Descrição */}
           <div className="col-lg-4 col-md-6">
             <div className="footer-brand mb-4">
@@ -179,10 +179,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-4 opacity-25" />
+        <hr className="my-4 opacity-25 animate-fade-in-up hidden-on-load animate-delay-2" />
 
         {/* Copyright e Links Legais */}
-        <div className="row align-items-center">
+        <div className="row align-items-center animate-fade-in-up hidden-on-load animate-delay-3">
           <div className="col-md-6">
             <p className="mb-0 text-light opacity-50">
               © 2025 RPG Realms Of The Unplugged. Todos os direitos reservados.

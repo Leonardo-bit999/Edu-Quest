@@ -43,37 +43,42 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-5">
       <div className="container">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 animate-fade-in-up hidden-on-load">
           <h2 className="fw-bold mb-3">
-            Perguntas Frequentes 
+            Perguntas Frequentes
             <i className="bi bi-question-circle-fill text-info ms-2"></i>
           </h2>
           <p className="lead text-muted">
             Tire suas dúvidas sobre nossa plataforma educacional gamificada
           </p>
         </div>
-        
+
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="accordion" id="faqAccordion">
-              {faqs.map((faq) => (
-                <div key={faq.id} className="accordion-item border-0 shadow-sm mb-3">
+              {faqs.map((faq, index) => (
+                <div
+                  key={faq.id}
+                  className={`accordion-item border-0 shadow-sm mb-3 animate-fade-in-up hidden-on-load animate-delay-${
+                    index + 1
+                  }`}
+                >
                   <h3 className="accordion-header">
-                    <button 
+                    <button
                       className="accordion-button collapsed fw-semibold"
-                      type="button" 
-                      data-bs-toggle="collapse" 
+                      type="button"
+                      data-bs-toggle="collapse"
                       data-bs-target={`#${faq.id}`}
-                      aria-expanded="false" 
+                      aria-expanded="false"
                       aria-controls={faq.id}
                     >
                       <i className="bi bi-patch-question-fill text-primary me-3"></i>
                       {faq.question}
                     </button>
                   </h3>
-                  <div 
-                    id={faq.id} 
-                    className="accordion-collapse collapse" 
+                  <div
+                    id={faq.id}
+                    className="accordion-collapse collapse"
                     data-bs-parent="#faqAccordion"
                   >
                     <div className="accordion-body text-muted">
@@ -84,9 +89,9 @@ const FAQSection = () => {
                 </div>
               ))}
             </div>
-            
-            <div className="text-center mt-5">
-              <div className="alert alert-light border shadow-sm bg-primary bg-opacity-10">
+
+            <div className="text-center mt-5 animate-fade-in-up hidden-on-load animate-delay-9">
+              <div className="alert alert-light border shadow-sm">
                 <h5 className="alert-heading">
                   <i className="bi bi-headset me-2"></i>
                   Ainda tem dúvidas?

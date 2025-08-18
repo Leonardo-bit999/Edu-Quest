@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container">
         <a className="navbar-brand fw-bold text-primary" href="#">
           <i className="bi bi-shield-fill-check me-2"></i>
-          RPG Realms Of The Unplugged
+          Realms Of The Unplugged
         </a>
 
         <button

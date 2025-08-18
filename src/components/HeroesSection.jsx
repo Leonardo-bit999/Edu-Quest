@@ -44,39 +44,56 @@ const HeroesSection = () => {
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="fw-bold mb-3">
-            Quem São Nossos Heróis? 
+            Quem São Nossos Heróis?
             <i className="bi bi-people-fill text-primary ms-2"></i>
           </h2>
           <p className="lead text-muted">
-            Transformamos educadores e estudantes em verdadeiros heróis da educação
+            Transformamos educadores e estudantes em verdadeiros heróis da
+            educação
           </p>
         </div>
-        
+
         <div className="row g-4">
           {heroes.map((hero, index) => (
-            <div key={index} className="col-lg-4 col-md-6">
+            <div
+              key={index}
+              className={`col-lg-4 col-md-6 animate-scale-in hidden-on-load animate-delay-${
+                index + 1
+              }`}
+            >
               <div className="card h-100 border-0 shadow-sm hover-lift">
                 <div className="card-body p-4">
                   <div className="text-center mb-4">
-                    <div className={`hero-icon-wrapper bg-${hero.color} bg-opacity-10 rounded-circle p-3 d-inline-block mb-3`}>
-                      <i className={`${hero.icon} display-5 text-${hero.color}`}></i>
+                    <div
+                      className={`hero-icon-wrapper bg-${hero.color} bg-opacity-10 rounded-circle p-3 d-inline-block mb-3`}
+                    >
+                      <i
+                        className={`${hero.icon} display-5 text-${hero.color}`}
+                      ></i>
                     </div>
                     <h5 className="card-title fw-bold">{hero.title}</h5>
                   </div>
-                  
-                  <p className="card-text text-muted mb-4">{hero.description}</p>
-                  
+
+                  <p className="card-text text-muted mb-4">
+                    {hero.description}
+                  </p>
+
                   <div className="hero-stats">
                     {hero.stats.map((stat, statIndex) => (
-                      <span key={statIndex} className={`badge bg-${hero.color} bg-opacity-10 text-${hero.color} me-2 mb-2`}>
+                      <span
+                        key={statIndex}
+                        className={`badge bg-${hero.color} bg-opacity-10 text-${hero.color} me-2 mb-2`}
+                      >
                         {stat}
                       </span>
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="card-footer bg-white border-0">
-                  <button className={`btn btn-outline-${hero.color} w-100 rounded-pill`}>
+                  <button
+                    className={`btn btn-outline-${hero.color} w-100 rounded-pill`}
+                  >
                     <i className="bi bi-arrow-right-circle me-2"></i>
                     Começar Jornada
                   </button>
@@ -85,15 +102,17 @@ const HeroesSection = () => {
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-5">
+
+        <div className="text-center mt-5 animate-fade-in-up hidden-on-load animate-delay-7">
           <div className="alert alert-success border-0 shadow-sm">
             <h5 className="alert-heading">
               <i className="bi bi-check-circle-fill me-2"></i>
               Junte-se à Revolução Educacional!
             </h5>
             <p className="mb-3">
-              Entre no universo do <strong>RPG Realms Of The Unplugged</strong> e <strong>desbloqueie seu potencial</strong>. É hora de conquistar <strong>novos níveis de conhecimento</strong>!
+              Entre no universo do <strong>RPG Realms Of The Unplugged</strong>{" "}
+              e <strong>desbloqueie seu potencial</strong>. É hora de conquistar{" "}
+              <strong>novos níveis de conhecimento</strong>!
             </p>
             <button className="btn btn-success btn-lg rounded-pill px-5">
               <i className="bi bi-rocket-takeoff-fill me-2"></i>
