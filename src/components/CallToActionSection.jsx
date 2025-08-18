@@ -65,7 +65,7 @@ const CallToActionSection = () => {
 
               {/* Botões */}
               <div className="cta-buttons">
-                <button className="btn btn-warning btn-lg me-3 mb-3 px-5 py-3 rounded-pill shadow-lg animate-fade-in-up animate-delay-7 animate-pulse hidden-on-load">
+                <button className="btn btn-warning btn-lg me-3 mb-3 px-5 py-3 rounded-pill shadow-lg animate-fade-in-up animate-delay-7">
                   <i className="bi bi-play-circle-fill me-2"></i>
                   <span className="fw-bold">Iniciar Aventura</span>
                 </button>

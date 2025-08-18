@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HeroSection = () => {
   return (
@@ -24,7 +24,7 @@ const HeroSection = () => {
               </p>
 
               <div className="hero-buttons">
-                <button className="btn btn-warning btn-lg me-3 mb-3 px-4 py-3 rounded-pill animate-fade-in-up animate-delay-4 animate-pulse hidden-on-load">
+                <button className="btn btn-warning btn-lg me-3 mb-3 px-4 py-3 rounded-pill animade-fade-in-up animate-delay-4">
                   <i className="bi bi-play-circle-fill me-2"></i>
                   Testar Protótipo
                 </button>
@@ -42,4 +42,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
